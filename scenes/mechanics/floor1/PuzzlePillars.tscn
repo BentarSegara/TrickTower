@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://uyd7na183hph"]
+
+[ext_resource type="PackedScene" uid="uid://wsfclpn57cqr" path="res://scenes/mechanics/floor1/PillarTop.tscn" id="1_suqdy"]
+[ext_resource type="PackedScene" uid="uid://isy0oj47sgc6" path="res://scenes/mechanics/floor1/PillarBottom.tscn" id="2_ps3ut"]
+
+[node name="PuzzlePillars" type="Node2D"]
+
+[node name="PillarTop" parent="." instance=ExtResource("1_suqdy")]
+bottom_pillar_path = NodePath("../PillarBottom")
+
+[node name="PillarBottom" parent="." instance=ExtResource("2_ps3ut")]

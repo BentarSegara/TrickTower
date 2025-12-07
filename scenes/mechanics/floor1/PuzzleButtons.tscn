@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b58qr0t6ne1la"]
+
+[ext_resource type="Script" uid="uid://cnqtlb8tvpagy" path="res://scenes/mechanics/floor1/PuzzleButtons.gd" id="1_2sa80"]
+[ext_resource type="PackedScene" uid="uid://v8vbn7tjnxlc" path="res://scenes/mechanics/floor1/RunePad.tscn" id="2_waqv1"]
+
+[node name="PuzzleButtons" type="Node2D"]
+script = ExtResource("1_2sa80")
+
+[node name="RunePad_Red" parent="." instance=ExtResource("2_waqv1")]
+modulate = Color(1, 0.6651851, 0.6651851, 1)
+
+[node name="RunePad_Blue" parent="." instance=ExtResource("2_waqv1")]
+pad_id = 1
+
+[node name="RunePad_Green" parent="." instance=ExtResource("2_waqv1")]
+modulate = Color(0.6651851, 1, 0.6651851, 1)
+pad_id = 2
