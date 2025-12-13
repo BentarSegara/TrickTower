@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://v8vbn7tjnxlc"]
 
-[ext_resource type="Script" uid="uid://247m2cdgbcnf" path="res://scripts/objects/RunePad.gd" id="1_mvcxx"]
+[ext_resource type="Script" uid="uid://247m2cdgbcnf" path="res://scenes/mechanics/floor1/RunePad.gd" id="1_mvcxx"]
 [ext_resource type="Texture2D" uid="uid://d376b35fymk8n" path="res://assets/sprites/objects/RunePad.png" id="2_l17n5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vpboc"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ccuqicnb5vbcq"]
 
-[ext_resource type="Script" uid="uid://bnbonpk8s354n" path="res://scripts/objects/pillarsprite.gd" id="1_6abp3"]
+[ext_resource type="Script" uid="uid://bnbonpk8s354n" path="res://scenes/mechanics/common/pillarsprite.gd" id="1_6abp3"]
 [ext_resource type="Texture2D" uid="uid://dryi4ndglx2i1" path="res://assets/tilesets/floors/Tileset-PirateBay.png" id="2_3wtd2"]
 [ext_resource type="Texture2D" uid="uid://4dehxhrlnuvk" path="res://assets/tilesets/floors/Tileset-Factory.png" id="3_ktxsa"]
 

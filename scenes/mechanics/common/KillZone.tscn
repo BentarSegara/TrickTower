@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2a2d5s20cptu"]
 
-[ext_resource type="Script" uid="uid://db7j05afa8o2t" path="res://scripts/tilemaps/Killzone.gd" id="1_hsp74"]
+[ext_resource type="Script" uid="uid://db7j05afa8o2t" path="res://scenes/mechanics/common/Killzone.gd" id="1_hsp74"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hsp74"]
 size = Vector2(253.33334, 20)

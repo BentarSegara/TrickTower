@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck3doaftyq8ml"]
+
+[ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/player/player.tscn" id="1_43dhk"]
+[ext_resource type="PackedScene" uid="uid://b2a2d5s20cptu" path="res://scenes/mechanics/common/KillZone.tscn" id="2_dpanm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dpanm"]
+size = Vector2(800, 50)
+
+[node name="TestPlayer" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_43dhk")]
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-4, 70)
+shape = SubResource("RectangleShape2D_dpanm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+
+[node name="KillZone" parent="." instance=ExtResource("2_dpanm")]
+position = Vector2(-576, -256)
+collision_layer = 255
+collision_mask = 255

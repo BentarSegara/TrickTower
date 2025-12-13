@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b58qr0t6ne1la"]
 
-[ext_resource type="Script" uid="uid://cnqtlb8tvpagy" path="res://scripts/objects/PuzzleButtons.gd" id="1_2sa80"]
-[ext_resource type="PackedScene" uid="uid://v8vbn7tjnxlc" path="res://scenes/objects/RunePad.tscn" id="2_waqv1"]
+[ext_resource type="Script" uid="uid://cnqtlb8tvpagy" path="res://scenes/mechanics/floor1/PuzzleButtons.gd" id="1_2sa80"]
+[ext_resource type="PackedScene" uid="uid://v8vbn7tjnxlc" path="res://scenes/mechanics/floor1/RunePad.tscn" id="2_waqv1"]
 
 [node name="PuzzleButtons" type="Node2D"]
 script = ExtResource("1_2sa80")

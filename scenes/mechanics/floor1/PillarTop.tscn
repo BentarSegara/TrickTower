@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://wsfclpn57cqr"]
 
-[ext_resource type="Script" uid="uid://crg5u8h2vqj0p" path="res://scripts/objects/PillarTop.gd" id="1_p8df5"]
+[ext_resource type="Script" uid="uid://crg5u8h2vqj0p" path="res://scenes/mechanics/floor1/PillarTop.gd" id="1_p8df5"]
 [ext_resource type="Texture2D" uid="uid://c6re5f2d5c3mx" path="res://assets/sprites/objects/PillarTop.png" id="2_t1bni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t1bni"]

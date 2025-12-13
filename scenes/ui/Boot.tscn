@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3fl7eetr48gc"]
-
-[ext_resource type="Script" uid="uid://dttwo23l2t61" path="res://scripts/ui/Boot.gd" id="1_ot4sm"]
-
-[node name="Boot" type="Node"]
-script = ExtResource("1_ot4sm")

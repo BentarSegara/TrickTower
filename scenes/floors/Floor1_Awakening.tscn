@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://u63n6gig61uh"]
 
 [ext_resource type="Texture2D" uid="uid://dh0kls217qd6c" path="res://assets/tilesets/floors/Tileset-PowerStation.png" id="1_1vuup"]
-[ext_resource type="Script" uid="uid://uar1qw6psfsr" path="res://scripts/tilemaps/Floor1.gd" id="1_c4nkj"]
-[ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/sprites/player.tscn" id="2_ujupn"]
-[ext_resource type="PackedScene" uid="uid://dohedw7pawxxj" path="res://scenes/tilemaps/AscensionCircle.tscn" id="3_ujupn"]
-[ext_resource type="PackedScene" uid="uid://b58qr0t6ne1la" path="res://scenes/objects/PuzzleButtons.tscn" id="5_c4nkj"]
-[ext_resource type="PackedScene" uid="uid://uyd7na183hph" path="res://scenes/objects/PuzzlePillars.tscn" id="6_01pt3"]
+[ext_resource type="Script" uid="uid://uar1qw6psfsr" path="res://scenes/floors/Floor1_Awakening.gd" id="1_c4nkj"]
+[ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/player/player.tscn" id="2_ujupn"]
+[ext_resource type="PackedScene" uid="uid://dohedw7pawxxj" path="res://scenes/mechanics/ascension/AscensionCircle.tscn" id="3_ujupn"]
+[ext_resource type="PackedScene" uid="uid://b58qr0t6ne1la" path="res://scenes/mechanics/floor1/PuzzleButtons.tscn" id="5_c4nkj"]
+[ext_resource type="PackedScene" uid="uid://uyd7na183hph" path="res://scenes/mechanics/floor1/PuzzlePillars.tscn" id="6_01pt3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_706g5"]
 texture = ExtResource("1_1vuup")
@@ -259,6 +259,7 @@ layer_1/tile_data = PackedInt32Array(131083, 196608, 536870917, 65542, 196608, 5
 [node name="Player" parent="." instance=ExtResource("2_ujupn")]
 
 [node name="AscensionCircle" parent="." instance=ExtResource("3_ujupn")]
+next_scene_path = "res://scenes/floors/Floor2_IllusionOfTruth.tscn"
 
 [node name="PuzzleButtons" parent="." instance=ExtResource("5_c4nkj")]
 position = Vector2(-263, 32)
@@ -278,7 +279,6 @@ position = Vector2(425, 40)
 
 [node name="PillarTop" parent="PuzzlePillars" index="0"]
 position = Vector2(-8, -96)
-circle_path = NodePath("../../AscensionCircle")
 
 [node name="PillarBottom" parent="PuzzlePillars" index="1"]
 position = Vector2(-8, 0)
