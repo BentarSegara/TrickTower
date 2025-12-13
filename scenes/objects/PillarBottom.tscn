@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://isy0oj47sgc6"]
 
-[ext_resource type="Script" uid="uid://bucx6gecsdvgo" path="res://scenes/mechanics/floor1/PillarBottom.gd" id="1_upiob"]
+[ext_resource type="Script" uid="uid://bucx6gecsdvgo" path="res://scripts/objects/PillarBottom.gd" id="1_upiob"]
 [ext_resource type="Texture2D" uid="uid://ddpve2khoiplf" path="res://assets/sprites/objects/PillarBottom.png" id="2_05r08"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_05r08"]
