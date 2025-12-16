@@ -1,7 +1,8 @@
 extends Node2D
 
-
+# Call interaction area
 @onready var interaction_area: InteractionArea = $InteractionArea
+
 @onready var sprite = $AnimatedSprite2D
 
 
