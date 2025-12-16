@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://c7ien1cuj7tgf"]
+
+[ext_resource type="Texture2D" uid="uid://dm1cqf01b0582" path="res://assets/sprites/npcs/Calliopi/Idle.png" id="1_e8sbl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw77i"]
+atlas = ExtResource("1_e8sbl")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnx44"]
+atlas = ExtResource("1_e8sbl")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uccp7"]
+atlas = ExtResource("1_e8sbl")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66tfr"]
+atlas = ExtResource("1_e8sbl")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxc3v"]
+atlas = ExtResource("1_e8sbl")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vj7kx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw77i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnx44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uccp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66tfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxc3v")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="callliopi" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vj7kx")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.12844223
+flip_h = true
