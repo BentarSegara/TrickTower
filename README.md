@@ -46,3 +46,30 @@
         └── 📁npc
         └── 📁player
 ```
+## Guide
+### Interaction Manager
+1. Tambah node `InteractionArea` di scene yang mau diberi interact.
+2. Define dimana dialogue resournya dan panggil `InteractionManager` di script object/spritnya.
+#### Contoh
+```
+# Define InteractionArea
+@onready var interaction_area: InteractionArea = $InteractionArea
+
+# Panggil interaction manager dan beri command (Disini bakal manggil dialog di fungsi _on_interact)
+func _ready():
+	interaction_area.interact = Callable(self, "_on_interact")
+```
+
+### Dialogue Manager
+1. Isi/content dari dialognya bisa ditambah di folder content/resource. Filenya yang ada extension `.dialogue`
+2. Buat foto/portrait di dialognya, ditaruh di folder `res://scenes/characters/[Nama Character dari dialogue resource]` dengan nama `portrait.png`.
+3. Define dan panggil dialognya.
+#### Contoh
+```
+# Define path dialogue resournya
+var dialogue_resource = load("res://dialogue/resources/test.dialogue")
+
+# Panggil dialogoe manager
+func _on_interact():
+	DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
+```
