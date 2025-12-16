@@ -30,6 +30,8 @@
             └── 📁player
         └── 📁tilesets
     └── 📁autoload
+    └── 📁dialogue                           ; Dialogue manager
+        └── 📁resource                         ; Dialogue resource
     └── 📁interaction                        ; Interaction Manager
         └── 📁interaction area                 ; Interaction Area
     └── 📁scenes
