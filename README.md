@@ -4,6 +4,8 @@
 | Used on  | Link |
 | ------------- | ------------- |
 | Floor 3  | [Castle Tileset](https://alchymy.itch.io/castle-tileset)  |
+| Home  | [FREE - Pixel Art Sidescroller Asset Pack 32x32 Overworld](https://gandalfhardcore.itch.io/free-pixel-art-sidescroller-asset-pack-32x32-overworld)  |
+
 
 ## Resource
 | Name  | Link |
