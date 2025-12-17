@@ -39,14 +39,15 @@
     └── 📁interaction                        ; Interaction Manager
         └── 📁interaction area                 ; Interaction Area
     └── 📁scenes
+        └── 📁characters
+            └── 📁calliopi
+            └── 📁player
         └── 📁floors
         └── 📁mainn
         └── 📁mechanics
             └── 📁ascension
             └── 📁common
             └── 📁floor1
-        └── 📁npc
-        └── 📁player
 ```
 ## Guide
 ### Interaction Manager
