@@ -10,4 +10,4 @@ func _ready():
 	
 # Call dialogoe manager
 func _on_interact():
-	SceneManager.change_scene("res://scenes/floors/Floor1_Awakening.tscn")
+	SceneManager.change_scene('res://scenes/floors/Floor1_Awakening.tscn')
