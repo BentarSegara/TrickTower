@@ -1,0 +1,14 @@
+~ start
+Player: [[Hi|Hello|Howdy]], this is some dialogue.
+Adik: [[Hi|Hello|Howdy]], this is some dialogue2.
+Player: Here are some choices.
+- First one
+	Player: You picked the first one.
+	Adik: You picked the first one2.
+- Second one
+	Player: You picked the second one.
+	Adik: You picked the second one2.
+- Start again => start
+- End the conversation => END
+Player: For more information see the online documentation.
+=> END

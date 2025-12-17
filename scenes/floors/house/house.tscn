@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://bw6myjoxijc6f"]
+[gd_scene load_steps=25 format=4 uid="uid://bw6myjoxijc6f"]
 
 [ext_resource type="Texture2D" uid="uid://u52mjjcitjsw" path="res://assets/tilesets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 5.png" id="1_7w882"]
 [ext_resource type="Texture2D" uid="uid://cyoly8fxdymma" path="res://assets/tilesets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 4.png" id="2_xc2a1"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://d3ng4djky7xjm" path="res://assets/tilesets/GandalfHardcore FREE Platformer Assets/Other Tiles1.png" id="10_xc2a1"]
 [ext_resource type="Texture2D" uid="uid://6ftey6m1cklm" path="res://assets/tilesets/GandalfHardcore FREE Platformer Assets/Decor.png" id="11_p2g6n"]
 [ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/characters/player/player.tscn" id="12_3e67i"]
+[ext_resource type="PackedScene" uid="uid://bfei28m2l5wce" path="res://scenes/characters/adik/adik.tscn" id="14_of46d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hpqa1"]
 texture = ExtResource("7_rjhbj")
@@ -885,10 +886,15 @@ tile_map_data = PackedByteArray("AAACAP3/AAAFAAIAAAACAP7/AAAFAAMAAAD///z/AAACAAE
 tile_set = SubResource("TileSet_j2wfr")
 
 [node name="Player" parent="." instance=ExtResource("12_3e67i")]
-position = Vector2(-195, 14)
+position = Vector2(-228, 14)
 scale = Vector2(0.63859254, 0.5626957)
+floor_constant_speed = true
 
 [node name="Camera2D" parent="Player" index="3"]
 zoom = Vector2(5, 5)
+
+[node name="Adik" parent="." instance=ExtResource("14_of46d")]
+position = Vector2(-72, 15)
+scale = Vector2(0.7157616, 0.6954969)
 
 [editable path="Player"]

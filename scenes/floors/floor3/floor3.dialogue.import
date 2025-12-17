@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bv2cwufbc6no1"
+path="res://.godot/imported/floor3.dialogue-0161b8fbdcf7c2cd3594b9533dc7db4a.tres"
+
+[deps]
+
+source_file="res://scenes/floors/floor3/floor3.dialogue"
+dest_files=["res://.godot/imported/floor3.dialogue-0161b8fbdcf7c2cd3594b9533dc7db4a.tres"]
+
+[params]
+
+defaults=true

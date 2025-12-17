@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ck2fylky8xsol"
+path="res://.godot/imported/house.dialogue-a50780a13d3d969a9388ac1000bdf5b7.tres"
+
+[deps]
+
+source_file="res://scenes/floors/house/house.dialogue"
+dest_files=["res://.godot/imported/house.dialogue-a50780a13d3d969a9388ac1000bdf5b7.tres"]
+
+[params]
+
+defaults=true

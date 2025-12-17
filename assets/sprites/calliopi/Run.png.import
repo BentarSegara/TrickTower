@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4poa5nmxqhv6"
-path="res://.godot/imported/Attack_2.png-ee08adb37ef36f1a721b5b3021312711.ctex"
+uid="uid://6h3i7ncl504e"
+path="res://.godot/imported/Run.png-4918001f8aa137d1bbdc1b213798096e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npcs/Calliopi/Attack_2.png"
-dest_files=["res://.godot/imported/Attack_2.png-ee08adb37ef36f1a721b5b3021312711.ctex"]
+source_file="res://assets/sprites/calliopi/Run.png"
+dest_files=["res://.godot/imported/Run.png-4918001f8aa137d1bbdc1b213798096e.ctex"]
 
 [params]
 

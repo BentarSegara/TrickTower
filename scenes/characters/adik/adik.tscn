@@ -1,0 +1,72 @@
+[gd_scene load_steps=12 format=3 uid="uid://bfei28m2l5wce"]
+
+[ext_resource type="Script" uid="uid://l82d767vs0wv" path="res://scenes/characters/adik/adik.gd" id="1_lbrk7"]
+[ext_resource type="Texture2D" uid="uid://dgj6r0agmx4hu" path="res://assets/sprites/adik/ElfIdle001Sheet-export.png" id="1_ojunr"]
+[ext_resource type="PackedScene" uid="uid://kheihk8j77jb" path="res://interaction/interaction area/interaction_area.tscn" id="2_4pa8f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua88c"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6hf5"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(160, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjqcm"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(320, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48irb"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(480, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvgca"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(640, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2ue5"]
+atlas = ExtResource("1_ojunr")
+region = Rect2(800, 0, 160, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rh5pq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua88c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6hf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjqcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48irb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvgca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2ue5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xs0u1"]
+radius = 52.0
+
+[node name="Adik" type="Node2D"]
+script = ExtResource("1_lbrk7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rh5pq")
+autoplay = "default"
+frame_progress = 0.51854765
+flip_h = true
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_4pa8f")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_xs0u1")

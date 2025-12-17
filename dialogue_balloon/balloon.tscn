@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dsotiru46cil"]
 
-[ext_resource type="Script" uid="uid://gv8r3secj0r6" path="res://dialogue/balloon.gd" id="1_36de5"]
+[ext_resource type="Script" uid="uid://gv8r3secj0r6" path="res://dialogue_balloon/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="FontFile" uid="uid://ca38nk6hed8ln" path="res://assets/fonts/superstar_memesbruh03.ttf" id="2_nrtci"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]

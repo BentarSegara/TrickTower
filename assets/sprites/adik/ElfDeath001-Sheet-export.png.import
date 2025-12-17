@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djtkx28ind7ai"
-path="res://.godot/imported/Attack_1.png-6dafa356dd280d45f0bb1832b13f0357.ctex"
+uid="uid://bvxvtum71mdai"
+path="res://.godot/imported/ElfDeath001-Sheet-export.png-1b45f03a6809b731a6663b0ec6fb4c2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npcs/Calliopi/Attack_1.png"
-dest_files=["res://.godot/imported/Attack_1.png-6dafa356dd280d45f0bb1832b13f0357.ctex"]
+source_file="res://assets/sprites/adik/ElfDeath001-Sheet-export.png"
+dest_files=["res://.godot/imported/ElfDeath001-Sheet-export.png-1b45f03a6809b731a6663b0ec6fb4c2c.ctex"]
 
 [params]
 

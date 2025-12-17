@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qfoaemacgv0t"
-path="res://.godot/imported/Attack_3.png-d3791f5af9ed83a4125944303808de71.ctex"
+uid="uid://dn6kjv7d32jg3"
+path="res://.godot/imported/portrait.png-6096902ee283918f7188b4a22f99bc0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npcs/Calliopi/Attack_3.png"
-dest_files=["res://.godot/imported/Attack_3.png-d3791f5af9ed83a4125944303808de71.ctex"]
+source_file="res://scenes/characters/adik/portrait.png"
+dest_files=["res://.godot/imported/portrait.png-6096902ee283918f7188b4a22f99bc0d.ctex"]
 
 [params]
 

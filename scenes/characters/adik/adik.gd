@@ -7,7 +7,7 @@ extends Node2D
 
 
 # Define where the dialogue resource is
-var dialogue_resource = load("res://scenes/floors/floor3/floor3.dialogue")
+var dialogue_resource = load("res://scenes/floors/house/house.dialogue")
 
 
 # Call interaction manager and assign the command

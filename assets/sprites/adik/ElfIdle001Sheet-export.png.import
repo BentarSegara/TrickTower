@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp2rxlqt7j82n"
-path="res://.godot/imported/Blood_Charge_3.png-e4123937f5c10265f071df31f22d90ee.ctex"
+uid="uid://dgj6r0agmx4hu"
+path="res://.godot/imported/ElfIdle001Sheet-export.png-aa543122d70bfd310f13615588adc530.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npcs/Calliopi/Blood_Charge_3.png"
-dest_files=["res://.godot/imported/Blood_Charge_3.png-e4123937f5c10265f071df31f22d90ee.ctex"]
+source_file="res://assets/sprites/adik/ElfIdle001Sheet-export.png"
+dest_files=["res://.godot/imported/ElfIdle001Sheet-export.png-aa543122d70bfd310f13615588adc530.ctex"]
 
 [params]
 
