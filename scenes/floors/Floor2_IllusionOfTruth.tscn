@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cqfs66gthm5yn"]
+[gd_scene load_steps=22 format=3 uid="uid://cqfs66gthm5yn"]
 
 [ext_resource type="Script" uid="uid://b8ocjc47lw7qp" path="res://scenes/floors/Floor2_IllusionOfTruth.gd" id="1_prmx6"]
 [ext_resource type="Texture2D" uid="uid://ce28ketfeyhhp" path="res://assets/tilesets/floors/Tileset-GreenZone.png" id="1_rvl8g"]
@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://dh0kls217qd6c" path="res://assets/tilesets/floors/Tileset-PowerStation.png" id="4_prmx6"]
 [ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/characters/player/player.tscn" id="5_xqsma"]
 [ext_resource type="PackedScene" uid="uid://ctrl3it6i4o25" path="res://scenes/objects/floor_2_door.tscn" id="8_b7sl0"]
+[ext_resource type="PackedScene" uid="uid://ctrfq1greu26f" path="res://scenes/objects/scroll.tscn" id="9_4mlks"]
+[ext_resource type="Resource" uid="uid://dqhwd86xcepwa" path="res://scenes/floors/scroll3.dialogue" id="10_nsun0"]
+[ext_resource type="Resource" uid="uid://cq3ifq82vwxtx" path="res://scenes/floors/scroll4.dialogue" id="11_as7j4"]
+[ext_resource type="Resource" uid="uid://dof4uggrivua3" path="res://scenes/floors/scroll5.dialogue" id="12_c73hj"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_xn112"]
 tile_data = PackedInt32Array(0, 196608, 1, 65536, 196608, 1)
@@ -858,3 +862,27 @@ layer_1/tile_data = PackedInt32Array(131067, 131081, 536870917, 196601, 131081, 
 position = Vector2(-1053, 177)
 
 [node name="Player" parent="." instance=ExtResource("5_xqsma")]
+
+[node name="Scroll3" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(-1114, -161)
+x_min = -517.0
+x_max = -1114.0
+y1 = -156.0
+y2 = -156.0
+dialogue_resource = ExtResource("10_nsun0")
+
+[node name="Scroll4" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(1129, -161)
+x_min = 522.0
+x_max = 1129.0
+y1 = -161.0
+y2 = -161.0
+dialogue_resource = ExtResource("11_as7j4")
+
+[node name="Scroll5" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(201, -711)
+x_min = -197.0
+x_max = 201.0
+y1 = -711.0
+y2 = -711.0
+dialogue_resource = ExtResource("12_c73hj")
