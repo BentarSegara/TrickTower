@@ -4,7 +4,6 @@ extends StaticBody2D
 @export var circle_path: NodePath
 
 @onready var bottom = get_node(bottom_pillar_path)
-@onready var circle = get_node(circle_path)
 
 var solved: bool = false
 
@@ -23,5 +22,3 @@ func trigger(action_type: String) -> void:
 func _press_rune_and_solve() -> void:
 	solved = true
 	# efek tekan rune di belakang pilar di sini
-	if circle:
-		circle.on_puzzle_solved()

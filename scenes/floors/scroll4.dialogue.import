@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cq3ifq82vwxtx"
+path="res://.godot/imported/scroll4.dialogue-f3e02fb10642bdeeabd0225a0b04ab9c.tres"
+
+[deps]
+
+source_file="res://scenes/floors/scroll4.dialogue"
+dest_files=["res://.godot/imported/scroll4.dialogue-f3e02fb10642bdeeabd0225a0b04ab9c.tres"]
+
+[params]
+
+defaults=true

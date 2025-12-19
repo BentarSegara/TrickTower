@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dqhwd86xcepwa"
+path="res://.godot/imported/scroll3.dialogue-97d4fdec657b439429af08d3e898b832.tres"
+
+[deps]
+
+source_file="res://scenes/floors/scroll3.dialogue"
+dest_files=["res://.godot/imported/scroll3.dialogue-97d4fdec657b439429af08d3e898b832.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dof4uggrivua3"
+path="res://.godot/imported/scroll5.dialogue-0ab9a02b15f754ebde377995502b7c0a.tres"
+
+[deps]
+
+source_file="res://scenes/floors/scroll5.dialogue"
+dest_files=["res://.godot/imported/scroll5.dialogue-0ab9a02b15f754ebde377995502b7c0a.tres"]
+
+[params]
+
+defaults=true

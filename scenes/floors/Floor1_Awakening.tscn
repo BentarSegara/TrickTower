@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=12 format=3 uid="uid://u63n6gig61uh"]
+=======
+[gd_scene load_steps=11 format=3 uid="uid://u63n6gig61uh"]
+>>>>>>> upstream/main
 
 [ext_resource type="Texture2D" uid="uid://dh0kls217qd6c" path="res://assets/tilesets/floors/Tileset-PowerStation.png" id="1_1vuup"]
-[ext_resource type="Script" uid="uid://uar1qw6psfsr" path="res://scenes/floors/Floor1_Awakening.gd" id="1_c4nkj"]
 [ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/characters/player/player.tscn" id="2_ujupn"]
 [ext_resource type="Script" uid="uid://b0rtkcjfnpydq" path="res://scenes/mechanics/common/pause_button.gd" id="3_a6uy5"]
 [ext_resource type="PackedScene" uid="uid://b58qr0t6ne1la" path="res://scenes/mechanics/floor1/PuzzleButtons.tscn" id="5_c4nkj"]
 [ext_resource type="PackedScene" uid="uid://uyd7na183hph" path="res://scenes/mechanics/floor1/PuzzlePillars.tscn" id="6_01pt3"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://beed0k32k3n6d" path="res://assets/others/pause button.png" id="6_a6uy5"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_a6uy5"]
@@ -13,6 +17,12 @@ action = &"pause_game"
 
 [sub_resource type="Shortcut" id="Shortcut_guqay"]
 events = [SubResource("InputEventAction_a6uy5")]
+=======
+[ext_resource type="PackedScene" uid="uid://bae7x4whvgh" path="res://scenes/objects/floor_1_door.tscn" id="6_a6uy5"]
+[ext_resource type="PackedScene" uid="uid://ctrfq1greu26f" path="res://scenes/objects/scroll.tscn" id="6_guqay"]
+[ext_resource type="Resource" uid="uid://hfny6x4pt1nf" path="res://scenes/floors/scroll1.dialogue" id="7_2pr1e"]
+[ext_resource type="Resource" uid="uid://v7na56vvt6ls" path="res://scenes/floors/scroll2.dialogue" id="8_gdf1o"]
+>>>>>>> upstream/main
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_706g5"]
 texture = ExtResource("1_1vuup")
@@ -250,8 +260,6 @@ terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_706g5")
 
 [node name="Floor1_Awakening" type="Node2D"]
-position = Vector2(-1, 0)
-script = ExtResource("1_c4nkj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -277,6 +285,9 @@ layer_0/tile_data = PackedInt32Array(4, 65536, 2, -65532, 262144, 4, -131068, 26
 layer_1/name = "Layer2"
 layer_1/tile_data = PackedInt32Array(131083, 196608, 536870917, 65542, 196608, 536870917, 131065, 131072, 536870917, 196596, 131072, 536870917, -15, 65536, 2, -262160, 65536, 2, -131091, 65536, 2, -131058, 65536, 2, -131057, 65536, 2, -131056, 65536, 2, -393236, 65536, 2, -458737, 65536, 2)
 
+[node name="Floor1Door" parent="." instance=ExtResource("6_a6uy5")]
+position = Vector2(1, -7)
+
 [node name="Player" parent="." instance=ExtResource("2_ujupn")]
 
 [node name="PuzzleButtons" parent="." instance=ExtResource("5_c4nkj")]
@@ -300,7 +311,21 @@ position = Vector2(-8, -96)
 [node name="PillarBottom" parent="PuzzlePillars" index="1"]
 position = Vector2(-8, 0)
 
-[connection signal="pressed" from="CanvasLayer/Pause_Button" to="CanvasLayer/Pause_Button" method="_on_Pressed"]
+[node name="Scroll1" parent="." instance=ExtResource("6_guqay")]
+position = Vector2(-608, -4)
+x_min = -610.0
+x_max = 525.0
+y1 = -293.0
+y2 = -25.0
+dialogue_resource = ExtResource("7_2pr1e")
+
+[node name="Scroll2" parent="." instance=ExtResource("6_guqay")]
+position = Vector2(-596, -291)
+x_min = -610.0
+x_max = 525.0
+y1 = -293.0
+y2 = -25.0
+dialogue_resource = ExtResource("8_gdf1o")
 
 [editable path="PuzzleButtons"]
 [editable path="PuzzlePillars"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cqfs66gthm5yn"]
+[gd_scene load_steps=22 format=3 uid="uid://cqfs66gthm5yn"]
 
 [ext_resource type="Script" uid="uid://b8ocjc47lw7qp" path="res://scenes/floors/Floor2_IllusionOfTruth.gd" id="1_prmx6"]
 [ext_resource type="Texture2D" uid="uid://ce28ketfeyhhp" path="res://assets/tilesets/floors/Tileset-GreenZone.png" id="1_rvl8g"]
@@ -7,6 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://cdntbiqltjtwp" path="res://assets/tilesets/floors/Tileset-ExclusionZone.png" id="3_xn112"]
 [ext_resource type="Texture2D" uid="uid://dh0kls217qd6c" path="res://assets/tilesets/floors/Tileset-PowerStation.png" id="4_prmx6"]
 [ext_resource type="PackedScene" uid="uid://c1rvunvoe6a4t" path="res://scenes/characters/player/player.tscn" id="5_xqsma"]
+[ext_resource type="PackedScene" uid="uid://ctrl3it6i4o25" path="res://scenes/objects/floor_2_door.tscn" id="8_b7sl0"]
+[ext_resource type="PackedScene" uid="uid://ctrfq1greu26f" path="res://scenes/objects/scroll.tscn" id="9_4mlks"]
+[ext_resource type="Resource" uid="uid://dqhwd86xcepwa" path="res://scenes/floors/scroll3.dialogue" id="10_nsun0"]
+[ext_resource type="Resource" uid="uid://cq3ifq82vwxtx" path="res://scenes/floors/scroll4.dialogue" id="11_as7j4"]
+[ext_resource type="Resource" uid="uid://dof4uggrivua3" path="res://scenes/floors/scroll5.dialogue" id="12_c73hj"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_xn112"]
 tile_data = PackedInt32Array(0, 196608, 1, 65536, 196608, 1)
@@ -853,4 +858,31 @@ layer_0/tile_data = PackedInt32Array(10, 65536, 5, -65526, 65545, 0, 9, 65536, 5
 layer_1/name = "Layer2"
 layer_1/tile_data = PackedInt32Array(131067, 131081, 536870917, 196601, 131081, 536870917, 262135, 131081, 536870917, 327669, 131081, 536870917, 393203, 131081, 536870917, 65540, 196617, 536870917, 131078, 196617, 536870917, 196616, 196617, 536870917, 262154, 196617, 536870917, 327692, 196617, 536870917, 458735, 9, 4, 393232, 65545, 4, -262145, 65545, 2, -327684, 65545, 2, -327680, 65545, 2, -262141, 65545, 2, -655359, 131081, 536870917, -720898, 196617, 536870917, 327660, 524294, 0, 327659, 393222, 0, 262126, 524294, 4, 262127, 524294, 5, 131052, 524294, 5, 131051, 524294, 4, -196643, 589830, 1, -196642, 589830, 5, -196641, 589830, 3, -131101, 524294, 4, -131100, 524294, 5, -25, 393222, 0, -24, 524294, 0, -65521, 131072, 7, -196590, 0, 7, 131089, 65536, 7, -262122, 196608, 0, -262121, 131072, 0, -262120, 196608, 0, -131043, 131072, 0, -131041, 131072, 0, -131042, 196608, 0, 262163, 327680, 1342177282, 262164, 196608, 2, 262165, 327680, 1610612738)
 
+[node name="Floor1Door" parent="." instance=ExtResource("8_b7sl0")]
+position = Vector2(-1053, 177)
+
 [node name="Player" parent="." instance=ExtResource("5_xqsma")]
+
+[node name="Scroll3" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(-1114, -161)
+x_min = -517.0
+x_max = -1114.0
+y1 = -156.0
+y2 = -156.0
+dialogue_resource = ExtResource("10_nsun0")
+
+[node name="Scroll4" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(1129, -161)
+x_min = 522.0
+x_max = 1129.0
+y1 = -161.0
+y2 = -711.0
+dialogue_resource = ExtResource("11_as7j4")
+
+[node name="Scroll5" parent="." instance=ExtResource("9_4mlks")]
+position = Vector2(201, -711)
+x_min = -197.0
+x_max = 201.0
+y1 = -711.0
+y2 = -156.0
+dialogue_resource = ExtResource("12_c73hj")
