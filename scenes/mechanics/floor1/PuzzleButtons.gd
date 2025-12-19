@@ -2,7 +2,6 @@ extends Node2D
 
 @export var circle_path: NodePath   # drag AscensionCircle di Floor1 ke sini
 
-@onready var circle = get_node(circle_path)
 
 var pattern: Array[int] = []
 var current_step: int = 0
@@ -41,5 +40,3 @@ func _reset() -> void:
 
 func _on_solved() -> void:
 	solved = true
-	if circle:
-		circle.on_puzzle_solved()
